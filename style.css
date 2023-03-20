@@ -1,0 +1,46 @@
+/**
+ * Theme Name:  barbershop
+ * Description: Короткое описание темы
+ * 
+ * Theme URI:   URL темы. Пр: http://wordpress.org/themes/twenty
+ * Author:      Daniel Bisyukov
+ * Author URI:  https://wp-kama.ru
+ *
+ * Tags:        black, brown, orange
+ * Text Domain: Домен перевода темы. Пр: twentythirteen
+ *
+ * License:     Лицензия. Пр: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Version:     1.0
+ */
+
+@font-face{
+font-family: 'Dosis';
+src: url('fonts/Dosis/Dosis-Light.woff2');	
+font-weight: 300;
+}
+
+@font-face{
+font-family: 'Dosis';
+src: url('fonts/Dosis/Dosis-Regular.woff2');	
+font-weight: 400;
+}
+
+@font-face{
+font-family: 'Dosis';
+src: url('fonts/Dosis/Dosis-Medium.woff2');	
+font-weight: 500;
+}
+
+@font-face{
+font-family: 'Quicksand';
+src: url('fonts/Quicksand/Quicksand-SemiBold.woff2');	
+font-weight: 600;
+}
+
+@font-face{
+font-family: 'Quicksand';
+src: url('fonts/Quicksand/Quicksand-Bold.woff2');	
+font-weight: 700;
+}
