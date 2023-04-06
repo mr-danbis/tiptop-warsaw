@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header header--other">
     <div class="container">
         <div class="header__wrapper">
 

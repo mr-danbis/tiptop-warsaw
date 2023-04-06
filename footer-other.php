@@ -1,4 +1,4 @@
-<footer class="footer footer--main">
+<footer class="footer">
     <div class="footer__wrapper">
         <div class="footer__top">
             <div class="container">
@@ -33,13 +33,8 @@
                         </div>
                     </div>
 
-                    <div class="footer__maps">
-                        <div class="footer__maps-item">
-                            <?php the_field('karta_1') ?>
-                        </div>
-                        <div class="footer__maps-item">
-                            <?php the_field('karta_2') ?>
-                        </div>
+                    <div class="footer__map">
+                        <?php the_field('gugl_karta') ?>
                     </div>
                 </div>
             </div>

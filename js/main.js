@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    const header = document.querySelector('header');
     class Slider {
         constructor(owlElement, owlOptions) {
             this.owlElement = owlElement;
@@ -69,9 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	function changeBooksy(){
 		const widget = document.querySelector('.booksy-widget-button');
-		widget.innerText = 'Rezerwacja';
+        if(widget){
+            widget.innerText = 'Rezerwacja';
+        }
 	}
 	changeBooksy();
+
+
+    function editHeaderTop() {
+        const wpAdminBar = document.getElementById('wpadminbar');
+        if (wpAdminBar){
+            header.style.top = `${wpAdminBar.clientHeight}px`;
+        } else {
+            header.style.top = '';
+        }
+    }
+    // editHeaderTop();
 
 
 });
