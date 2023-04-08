@@ -23,7 +23,7 @@ Template Post Type: post
         <script type="text/javascript" src="https://booksy.com/widget/code.js?id=91348&country=pl&lang=pl"></script>
 		
         <?php get_sidebar(); ?>
-        <?php get_header('other'); ?>
+        <?php get_header(); ?>
 
         <main class="main">
 
