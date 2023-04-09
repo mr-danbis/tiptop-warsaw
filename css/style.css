@@ -1610,38 +1610,38 @@ body {
         width: 80%;
         text-align: center;
         text-shadow: 
-		-0   -3px 6px rgba(56, 163, 253, 0.3),
-		 0   -3px 6px rgba(56, 163, 253, 0.3),
-		-0    3px 6px rgba(56, 163, 253, 0.3),
-		 0    3px 6px rgba(56, 163, 253, 0.3),
-		-3px -0   6px rgba(56, 163, 253, 0.3),
-		 3px -0   6px rgba(56, 163, 253, 0.3),
-		-3px  0   6px rgba(56, 163, 253, 0.3),
-		 3px  0   6px rgba(56, 163, 253, 0.3),
-		-1px -3px 6px rgba(56, 163, 253, 0.3),
-		 1px -3px 6px rgba(56, 163, 253, 0.3),
-		-1px  3px 6px rgba(56, 163, 253, 0.3),
-		 1px  3px 6px rgba(56, 163, 253, 0.3),
-		-3px -1px 6px rgba(56, 163, 253, 0.3),
-		 3px -1px 6px rgba(56, 163, 253, 0.3),
-		-3px  1px 6px rgba(56, 163, 253, 0.3),
-		 3px  1px 6px rgba(56, 163, 253, 0.3),
-		-2px -3px 6px rgba(56, 163, 253, 0.3),
-		 2px -3px 6px rgba(56, 163, 253, 0.3),
-		-2px  3px 6px rgba(56, 163, 253, 0.3),
-		 2px  3px 6px rgba(56, 163, 253, 0.3),
-		-3px -2px 6px rgba(56, 163, 253, 0.3),
-		 3px -2px 6px rgba(56, 163, 253, 0.3),
-		-3px  2px 6px rgba(56, 163, 253, 0.3),
-		 3px  2px 6px rgba(56, 163, 253, 0.3),
-		-3px -3px 6px rgba(56, 163, 253, 0.3),
-		 3px -3px 6px rgba(56, 163, 253, 0.3),
-		-3px  3px 6px rgba(56, 163, 253, 0.3),
-		 3px  3px 6px rgba(56, 163, 253, 0.3),
-		-3px -3px 6px rgba(56, 163, 253, 0.3),
-		 3px -3px 6px rgba(56, 163, 253, 0.3),
-		-3px  3px 6px rgba(56, 163, 253, 0.3),
-		 3px  3px 6px rgba(56, 163, 253, 0.3);
+		-0   -3px 6px #000,
+		 0   -3px 6px #000,
+		-0    3px 6px #000,
+		 0    3px 6px #000,
+		-3px -0   6px #000,
+		 3px -0   6px #000,
+		-3px  0   6px #000,
+		 3px  0   6px #000,
+		-1px -3px 6px #000,
+		 1px -3px 6px #000,
+		-1px  3px 6px #000,
+		 1px  3px 6px #000,
+		-3px -1px 6px #000,
+		 3px -1px 6px #000,
+		-3px  1px 6px #000,
+		 3px  1px 6px #000,
+		-2px -3px 6px #000,
+		 2px -3px 6px #000,
+		-2px  3px 6px #000,
+		 2px  3px 6px #000,
+		-3px -2px 6px #000,
+		 3px -2px 6px #000,
+		-3px  2px 6px #000,
+		 3px  2px 6px #000,
+		-3px -3px 6px #000,
+		 3px -3px 6px #000,
+		-3px  3px 6px #000,
+		 3px  3px 6px #000,
+		-3px -3px 6px #000,
+		 3px -3px 6px #000,
+		-3px  3px 6px #000,
+		 3px  3px 6px #000;
     }
 
     .info__block {
@@ -1651,6 +1651,12 @@ body {
     .info__btn{
         opacity: 1;
         width: 100%;
+        border: 4px solid rgba(56, 164, 253, 0.494);
+    }
+
+    .info__btn:hover{
+        background-color: rgba(56, 164, 253, 0.494);
+        color: #fff;
         border: 4px solid rgba(56, 164, 253, 0.494);
     }
 

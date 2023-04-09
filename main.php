@@ -38,7 +38,7 @@ Template Post Type: page
                             $myposts = get_posts([ 
                                 'numberposts' => 2,
                                 'category_name'    => 'spisok-adresov',
-                                'order' => 'ASC',
+                                // 'order' => 'ASC',
                             ]);
 
                             if( $myposts ){
