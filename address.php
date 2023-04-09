@@ -20,7 +20,8 @@ Template Post Type: post
 	
     <div class="wrapper">
 
-        <script type="text/javascript" src="https://booksy.com/widget/code.js?id=91348&country=pl&lang=pl"></script>
+        <script type="text/javascript" src="<?php the_field('ssylka') ?>"></script>
+
 		
         <?php get_sidebar(); ?>
         <?php get_header(); ?>
@@ -42,6 +43,45 @@ Template Post Type: post
                     </div>
                 </div>
             </section>
+
+            <section class="services services-address" id="service">
+                <div class="container">
+                    <div class="services__wrapper">
+                        <h2 class="services__title">
+                            USŁUGI
+                        </h2>
+                        <ul class="services__list">
+
+                        <?php
+                            global $post;
+
+                            $myposts = get_posts([ 
+                                'numberposts' => 30,
+                                'category_name'    => 'services_list',
+								'order' => 'ASC'
+                            ]);
+
+                            if( $myposts ){
+                                foreach( $myposts as $post ){
+                                    setup_postdata( $post );
+                                    ?>
+                                    <li class="services__item">
+                                        <h3 class="services__item-title"><?php the_title(); ?></h3>
+                                        <div class="services__item-price">
+                                            <span class="services__item-price_digit"><?php the_field('Цена в услугах') ?></span>
+                                            <span class="services__item-price_currency">PLN</span>
+                                        </div>
+                                    </li>
+                                    <?php 
+                                }
+                            }
+                            wp_reset_postdata(); // Сбрасываем $post
+                        ?>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- /.services -->
 
             <section class="gallery">
                 <div class="container">

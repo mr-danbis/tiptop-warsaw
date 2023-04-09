@@ -45,7 +45,7 @@ Template Post Type: page
                                 foreach( $myposts as $post ){
                                     setup_postdata( $post );
                                     ?>
-                                        <a class="start__adress" href="<?php echo get_permalink(); ?>" target="_blank">
+                                        <a class="start__adress" href="<?php echo get_permalink(); ?>">
                                             <img class="start__adress-img" src="<?php the_field('foto_lokaczii') ?>" alt="">
                                             <h3 class="start__adress-title"><?php the_title() ?></h3>
                                         </a>
@@ -111,7 +111,7 @@ Template Post Type: page
                 <div class="container">
                     <div class="services__wrapper">
                         <h2 class="services__title">
-                            <?php the_field('nazvanie_bloka_uslugi'); ?>
+                            USŁUGI
                         </h2>
                         <ul class="services__list">
 

@@ -7,7 +7,7 @@
                         <h2 class="footer__info-title">Kontact</h2>
                         <ul class="footer__info-list">
                             <li class="footer__info-item footer__info-tel">
-                                <a class="footer__info-link" href="<?php echo get_option('phone'); ?>">
+                                <a class="footer__info-link" href="tel:<?php echo get_option('phone'); ?>">
                                    <?php echo get_option('phone'); ?>
                                 </a>
                             </li>

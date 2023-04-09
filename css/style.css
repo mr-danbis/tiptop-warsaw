@@ -1248,6 +1248,10 @@ body {
     padding: 7rem 0;
 }
 
+.services-address{
+    padding-bottom: 0 !important;
+}
+
 .services__title {
     font-size: calc(20px + 25 * ((100vw - 320px) / 1600));
     text-transform: uppercase;
@@ -1476,8 +1480,8 @@ body {
 .booksy-widget-container{
 	position: fixed;
     z-index: 10;
-    left: -1%;
-    bottom: 7%;
+    left: -30px;
+    bottom: 100px;
     border-radius: 10px 100px / 120px;
     background-color: #000;
     color: #fff;
@@ -1590,13 +1594,54 @@ body {
 
 @media (max-width: 850px) {
     .info {
-        padding-top: 17px;
+        height: 35rem;
+        padding-top: 50px;
     }
 
     .info > .container {
+        height: 100%;
         flex-direction: column;
         width: 100%;
         position: relative;
+    }
+
+    .info__address{
+        font-size: calc(20px + 60 * ((100vw - 320px) / 1600));
+        width: 80%;
+        text-align: center;
+        text-shadow: 
+		-0   -3px 6px rgba(56, 163, 253, 0.3),
+		 0   -3px 6px rgba(56, 163, 253, 0.3),
+		-0    3px 6px rgba(56, 163, 253, 0.3),
+		 0    3px 6px rgba(56, 163, 253, 0.3),
+		-3px -0   6px rgba(56, 163, 253, 0.3),
+		 3px -0   6px rgba(56, 163, 253, 0.3),
+		-3px  0   6px rgba(56, 163, 253, 0.3),
+		 3px  0   6px rgba(56, 163, 253, 0.3),
+		-1px -3px 6px rgba(56, 163, 253, 0.3),
+		 1px -3px 6px rgba(56, 163, 253, 0.3),
+		-1px  3px 6px rgba(56, 163, 253, 0.3),
+		 1px  3px 6px rgba(56, 163, 253, 0.3),
+		-3px -1px 6px rgba(56, 163, 253, 0.3),
+		 3px -1px 6px rgba(56, 163, 253, 0.3),
+		-3px  1px 6px rgba(56, 163, 253, 0.3),
+		 3px  1px 6px rgba(56, 163, 253, 0.3),
+		-2px -3px 6px rgba(56, 163, 253, 0.3),
+		 2px -3px 6px rgba(56, 163, 253, 0.3),
+		-2px  3px 6px rgba(56, 163, 253, 0.3),
+		 2px  3px 6px rgba(56, 163, 253, 0.3),
+		-3px -2px 6px rgba(56, 163, 253, 0.3),
+		 3px -2px 6px rgba(56, 163, 253, 0.3),
+		-3px  2px 6px rgba(56, 163, 253, 0.3),
+		 3px  2px 6px rgba(56, 163, 253, 0.3),
+		-3px -3px 6px rgba(56, 163, 253, 0.3),
+		 3px -3px 6px rgba(56, 163, 253, 0.3),
+		-3px  3px 6px rgba(56, 163, 253, 0.3),
+		 3px  3px 6px rgba(56, 163, 253, 0.3),
+		-3px -3px 6px rgba(56, 163, 253, 0.3),
+		 3px -3px 6px rgba(56, 163, 253, 0.3),
+		-3px  3px 6px rgba(56, 163, 253, 0.3),
+		 3px  3px 6px rgba(56, 163, 253, 0.3);
     }
 
     .info__block {
@@ -1604,21 +1649,28 @@ body {
     }
 
     .info__btn{
-        width: 90%;
+        opacity: 1;
+        width: 100%;
+        border: 4px solid rgba(56, 164, 253, 0.494);
     }
 
     .info__img{
+        width: 100%;
         border-radius: 0;
+        height: 100%;
+        object-fit: cover;
     }
 
     .info__block:first-child{
+        height: 100%;
         position: relative;
     }
 
     .info__block:last-child {
+        width: 90%;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translate(5%, -50%);
     }
 
     .info__address{

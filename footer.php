@@ -7,7 +7,7 @@
                         <h2 class="footer__info-title">Kontact</h2>
                         <ul class="footer__info-list">
                             <li class="footer__info-item footer__info-tel">
-                                <a class="footer__info-link" href="<?php echo get_option('phone'); ?>">
+                                <a class="footer__info-link" href="tel:<?php echo get_option('phone'); ?>">
                                    <?php echo get_option('phone'); ?>
                                 </a>
                             </li>
@@ -48,7 +48,7 @@
                                     setup_postdata( $post );
                                     ?>
                                         <div class="footer__maps-item">
-                                            <a class="footer__maps-item_link" href="<?php echo get_permalink(); ?>" target="_blank">
+                                            <a class="footer__maps-item_link" href="<?php echo get_permalink(); ?>">
                                                 <h3 class="footer__maps-item_title"><?php the_title() ?></h3>
                                             </a>
                                             <?php the_field('gugl_karta') ?>

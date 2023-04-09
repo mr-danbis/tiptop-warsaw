@@ -35,7 +35,7 @@
                         foreach( $myposts as $post ){
                             setup_postdata( $post );
                             ?>
-                                <a class="sidebar__adresses-adress" href="<?php echo get_permalink(); ?>" target="_blank">
+                                <a class="sidebar__adresses-adress" href="<?php echo get_permalink(); ?>">
                                     <h3 class="sidebar__adresses-adress_title"><?php the_title() ?></h3>
                                 </a>
                             <?php 
