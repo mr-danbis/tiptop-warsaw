@@ -739,6 +739,8 @@ body {
 }
 
 .sidebar {
+    height: 100vh;
+    overflow: scroll;
     position: fixed;
     left: 0;
     top: 0;
@@ -759,18 +761,19 @@ body {
 }
 
 .sidebar__nav {
-    margin-top: 40%;
+    padding-top: 35%;
+    padding-bottom: 35%;
 	width: 300px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .sidebar__close {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 55px;
+    left: 40px;
 }
 
 .sidebar__list {
