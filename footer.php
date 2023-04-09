@@ -34,12 +34,30 @@
                     </div>
 
                     <div class="footer__maps">
-                        <div class="footer__maps-item">
-                            <?php the_field('karta_1') ?>
-                        </div>
-                        <div class="footer__maps-item">
-                            <?php the_field('karta_2') ?>
-                        </div>
+                        <?php
+                            global $post;
+
+                            $myposts = get_posts([ 
+                                'numberposts' => 2,
+                                'category_name'    => 'spisok-adresov',
+                                'order' => 'ASC',
+                            ]);
+
+                            if( $myposts ){
+                                foreach( $myposts as $post ){
+                                    setup_postdata( $post );
+                                    ?>
+                                        <div class="footer__maps-item">
+                                            <a class="footer__maps-item_link" href="<?php echo get_permalink(); ?>" target="_blank">
+                                                <h3 class="footer__maps-item_title"><?php the_title() ?></h3>
+                                            </a>
+                                            <?php the_field('gugl_karta') ?>
+                                        </div>
+                                    <?php 
+                                }
+                            }
+                            wp_reset_postdata(); // Сбрасываем $post
+                        ?>
                     </div>
                 </div>
             </div>
