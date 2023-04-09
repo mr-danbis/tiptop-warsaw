@@ -182,25 +182,12 @@ body {
 }
 
 .box {
-    position: relative;
     height: 50rem;
     width: 100vw;
 	overflow: hidden;
-    /* background-image: url(http://localhost:8888/tiptop-warsaw/wp-content/uploads/2022/12/img_0698-scaled.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
-/* .box::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000000a6;
-} */
 
 
 .wrapper {
@@ -1500,6 +1487,7 @@ body {
     transition: 0.3s ease-in-out;
     animation: hoverWave linear 1s infinite;
     border: 2px solid transparent;
+    opacity: 0.7;
 }
 
 .booksy-widget-container:hover{
@@ -1587,6 +1575,7 @@ body {
     transition: 0.3s ease-in-out;
     -webkit-animation: hoverWave linear 1s infinite;
     animation: hoverWave linear 1s infinite;
+    opacity: 0.7;
 }
 
 .info__btn:hover{
@@ -1598,18 +1587,45 @@ body {
 
 @media (max-width: 850px) {
     .info {
-        padding-top: 90px;
+        padding-top: 17px;
     }
 
     .info > .container {
         flex-direction: column;
+        width: 100%;
+        position: relative;
     }
 
     .info__block {
         width: 100%;
     }
 
-    .info__block:first-child {
-        margin-bottom: 40px;
+    .info__img{
+        border-radius: 0;
+    }
+
+    .info__block:first-child{
+        position: relative;
+    }
+
+    .info__block:last-child {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .info__address{
+        color: #fff;
+    }
+
+
+    .info__block:first-child::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000a6;
     }
 }
