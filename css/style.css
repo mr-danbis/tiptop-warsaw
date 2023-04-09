@@ -1603,6 +1603,10 @@ body {
         width: 100%;
     }
 
+    .info__btn{
+        width: 90%;
+    }
+
     .info__img{
         border-radius: 0;
     }
@@ -1629,6 +1633,6 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #000000a6;
+        background-color: #00000073;
     }
 }

@@ -24,11 +24,11 @@
                         <div class="footer__social">
                             <a class="footer__social-item" href="<?php echo get_option('facebook'); ?>"
                                 target='_blank'>
-                                <img src="http://localhost:8888/tiptop-warsaw/wp-content/uploads/2022/12/facebook.svg">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/facebook.svg">
                             </a>
                             <a class="footer__social-item" href="<?php echo get_option('instagram'); ?>"
                                 target='_blank'>
-                                <img src="http://localhost:8888/tiptop-warsaw/wp-content/uploads/2022/12/instagram.svg">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/instagram.svg">
                             </a>
                         </div>
                     </div>
